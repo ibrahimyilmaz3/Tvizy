@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Tvizy</string>
+    <string name="hash_program">\@yalıçapkını</string>
+    <string name="somebody_followed_you">\@ayşe adlı kullanıcı sizi takip etti.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="showtv">\@showtv</string>
+    <string name="ayse">\@ayşe</string>
+</resources>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/round_16_white">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+<!--
+        <LinearLayout
+            android:elevation="5dp"
+            android:id="@+id/linearProgram"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingHorizontal="40dp"
+            android:paddingTop="100dp">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/ivSeries"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:padding="1dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/example_series"
+                app:shapeAppearanceOverlay="@style/Circular"
+                app:strokeColor="@color/white"
+                app:strokeWidth="1dp" />
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/satoshi_bold"
+                android:paddingStart="6dp"
+                android:text="Güzel Günler"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+-->
+
+        <LinearLayout
+            android:layout_gravity="bottom"
+            android:elevation="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="200dp"
+            android:paddingStart="40dp"
+            android:paddingEnd="100dp">
+
+            <TextView
+                android:id="@+id/tvQuestion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/round_16_white"
+                android:fontFamily="@font/satoshi_bold"
+                android:gravity="center"
+                android:paddingVertical="10dp"
+                android:text="Sence Fatih haklı mı?"
+                android:textColor="@color/light_purple"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tvOption1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="70dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/round_9_white"
+                android:fontFamily="@font/satoshi_medium"
+                android:gravity="start"
+                android:padding="5dp"
+                android:text="Cevaplamak için tıklayın"
+                android:textColor="@color/black"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/tvOption2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="70dp"
+                android:background="@drawable/round_9_white"
+                android:fontFamily="@font/satoshi_medium"
+                android:gravity="start"
+                android:padding="5dp"
+                android:text="Cevaplamak için tıklayın"
+                android:textColor="@color/black"
+                android:textSize="10sp" />
+
+<!--
+            <LinearLayout
+                android:id="@+id/linearSend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/round_10_purple"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingHorizontal="17dp"
+                android:paddingVertical="6dp">
+
+                <TextView
+                    android:id="@+id/tvSend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/satoshi_bold"
+                    android:paddingEnd="5dp"
+                    android:text="Gönder"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:id="@+id/ivTick"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:src="@drawable/tick_black"
+                    android:visibility="gone"
+                    app:tint="@color/white" />
+            </LinearLayout>
+-->
+
+<!--
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/satoshi_bold"
+                android:paddingTop="10dp"
+                android:text="*Anket sonucunu Show TV'de takip edebilirsiniz."
+                android:textColor="@color/white"
+                android:textSize="8sp"
+                android:textStyle="bold|italic" />
+-->
+
+        </LinearLayout>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:elevation="-1dp">
+
+            <ImageView
+                android:id="@+id/ivBackground"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/series_1" />
+
+        </androidx.cardview.widget.CardView>
+
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

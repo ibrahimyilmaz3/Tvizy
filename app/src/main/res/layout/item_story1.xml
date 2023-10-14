@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:paddingEnd="10dp"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/ivProgram"
+        android:layout_width="74dp"
+        android:layout_height="74dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/example_profile"
+
+        app:strokeWidth="1dp"
+        android:padding="1dp"
+        app:strokeColor="@color/light_purple"
+
+        app:layout_constraintBottom_toTopOf="@id/linearChannel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/CornerCut20" />
+
+    <LinearLayout
+        android:id="@+id/linearChannel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-17dp"
+        android:background="@drawable/round_90_white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivProgram">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/ivChannel"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:padding="5dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/show_tv"
+            app:shapeAppearanceOverlay="@style/Circular" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ivLive"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="-7dp"
+        android:layout_marginStart="-15dp"
+        android:src="@drawable/live_icon_2"
+        app:layout_constraintStart_toEndOf="@id/linearChannel"
+        app:layout_constraintBottom_toBottomOf="@id/linearChannel"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
